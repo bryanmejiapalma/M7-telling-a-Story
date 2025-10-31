@@ -1,7 +1,15 @@
+<<<<<<< HEAD
+[gd_scene load_steps=8 format=3 uid="uid://bddwfljeh2thd"]
+
+[ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_1cblk"]
+[ext_resource type="Theme" uid="uid://drays61pfu7xc" path="res://lessons/main_theme.tres" id="1_5dtme"]
+[ext_resource type="Script" uid="uid://dhsjgposivl1e" path="res://lessons/dialogue.gd" id="2_6cfwb"]
+=======
 [gd_scene load_steps=7 format=3 uid="uid://bddwfljeh2thd"]
 
 [ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_1cblk"]
 [ext_resource type="Theme" uid="uid://drays61pfu7xc" path="res://lessons/main_theme.tres" id="1_5dtme"]
+>>>>>>> 6bc8fa133990e7379e257c821c5149c3669ef561
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="2_rjqnu"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="3_5dtme"]
 [ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="4_rjqnu"]
@@ -9,8 +17,8 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6cfwb"]
 shader = ExtResource("1_1cblk")
 shader_parameter/pattern_sampler = ExtResource("2_rjqnu")
-shader_parameter/bg_color = Color(1, 0.9490196, 0.75686276, 1)
-shader_parameter/pattern_color = Color(1, 0.90588236, 0.49019608, 1)
+shader_parameter/bg_color = Color(1, 0.94902, 0.756863, 1)
+shader_parameter/pattern_color = Color(1, 0.905882, 0.490196, 1)
 shader_parameter/pattern_size = 256.0
 
 [node name="Dialogue" type="Control"]
@@ -21,6 +29,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_5dtme")
+<<<<<<< HEAD
+script = ExtResource("2_6cfwb")
+=======
+>>>>>>> 6bc8fa133990e7379e257c821c5149c3669ef561
 
 [node name="background" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_6cfwb")
@@ -36,11 +48,11 @@ grow_vertical = 2
 [node name="Body" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.40100002
+anchor_right = 0.401
 anchor_bottom = 1.0
 offset_left = 29.0
 offset_top = 337.0
-offset_right = -99.920044
+offset_right = -99.92
 offset_bottom = -2.0
 texture = ExtResource("3_5dtme")
 expand_mode = 1
@@ -60,6 +72,7 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -74,19 +87,28 @@ text = "Hello World!"
 fit_content = true
 
 [node name="NextButton" type="Button" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+<<<<<<< HEAD
 offset_left = -195.0
 offset_top = -117.0
 offset_right = -24.0
 offset_bottom = -17.0
+=======
+offset_left = -155.0
+offset_top = -110.0
+offset_right = -8.0
+offset_bottom = -8.0
+>>>>>>> 6bc8fa133990e7379e257c821c5149c3669ef561
 grow_horizontal = 0
 grow_vertical = 0
 text = "next
 "
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
