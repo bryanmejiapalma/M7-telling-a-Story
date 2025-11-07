@@ -17,9 +17,10 @@ var bodies := {
 ## - text: a [code]String[/code] containing the text the character says
 ## - character: a [code]Texture[/code] representing the character
 var dialogue_items: Array[Dictionary] = [
+
 	{
 		"expression": expressions["regular"],
-		"text": "I've been studying arrays and dictionaries lately.",
+		"text": "I've been learning about [wave]arrays and dictionaries[/wave] lately.",
 		"character": bodies["sophia"],
 	},
 	{
@@ -29,7 +30,7 @@ var dialogue_items: Array[Dictionary] = [
 	},
 	{
 		"expression": expressions["sad"],
-		"text": "Well... it's a little complicated!",
+		"text": "Well... it's a little [shake]complicated[/shake]!",
 		"character": bodies["sophia"],
 	},
 	{
@@ -54,12 +55,11 @@ var dialogue_items: Array[Dictionary] = [
 	},
 	{
 		"expression": expressions["happy"],
-		"text": "Thanks for the encouragement. Time to LEARN!!!",
+		"text": "Thanks for the encouragement. Time to [tornado freq=3.0][rainbow val=1.0]LEARN!!![/rainbow][/tornado]",
 		"character": bodies["sophia"],
 	},
 ]
 var current_item_index := 0
-
 
 @onready var rich_text_label: RichTextLabel = %RichTextLabel
 @onready var next_button: Button = %NextButton
@@ -118,7 +118,7 @@ func advance() -> void:
 func slide_in() -> void:
 	var slide_tween := create_tween()
 	slide_tween.set_ease(Tween.EASE_OUT)
-	body.position.x = 200
+	body.position.x = get_viewport_rect().size.x / 7
 	slide_tween.tween_property(body, "position:x", 0, 0.3)
 	body.modulate.a = 0
 	slide_tween.parallel().tween_property(body, "modulate:a", 1, 0.2)

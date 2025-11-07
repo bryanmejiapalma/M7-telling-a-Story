@@ -81,10 +81,9 @@ offset_top = 542.0
 offset_right = -47.0
 offset_bottom = -440.0
 grow_horizontal = 2
-text = "Hello World!"
+bbcode_enabled = true
+text = "[i]hello[/i] [b]world[/b]"
 fit_content = true
-visible_characters = 4
-visible_ratio = 0.352
 
 [node name="NextButton" type="Button" parent="."]
 unique_name_in_owner = true
