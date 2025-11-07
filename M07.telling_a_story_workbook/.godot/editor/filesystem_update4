@@ -1,4 +1,4 @@
-res://lessons/dialogue.tscn
+res://lessons/expressions.tscn
 res://addons/gdpractice/assets/theme.tres
 res://assets/sliding_background.gdshader
 res://addons/gdpractice/practice_solutions/L5.P1.pick_correct_response/assets/practice_exercises_theme.tres
@@ -10,4 +10,3 @@ res://addons/gdpractice/practice_solutions/L10.P1.image_slideshow/assets/practic
 res://addons/gdpractice/practice_solutions/L10.P2.party_members/assets/practice_exercises_theme.tres
 res://lessons/main_theme.tres
 res://lessons/expressions.gd
-res://lessons/expressions.tscn

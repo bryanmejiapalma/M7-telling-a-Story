@@ -1,3 +1,4 @@
+TextureRect
 Button
 HBoxContainer
 BoxContainer
@@ -5,5 +6,4 @@ VBoxContainer
 Container
 AudioStreamPlayer
 RichTextLabel
-TextureRect
 ColorRect
